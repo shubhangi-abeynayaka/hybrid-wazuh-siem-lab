@@ -6,10 +6,19 @@ This hybrid Wazuh SOC lab integrates a virtualized Linux management plane with a
 
 ## Topology Diagram
 
-[Windows 11 Host (Wazuh Agent + Security Logs)]
-       │
-       ▼ (VirtualBox NAT Gateway / Port Forwarding via 10.0.2.2)
-[Ubuntu Linux VM (Wazuh Manager + Indexer / OpenSearch + Dashboard)]
+```text
++-------------------------------------------------------------+
+|                       Windows 11 Host                       |
+|            (Wazuh Agent + Windows Security Logs)            |
++-------------------------------------------------------------+
+                               |
+                               | VirtualBox NAT / Port Forwarding
+                               | (Host Port 2222 -> Guest Port 22)
+                               v
++-------------------------------------------------------------+
+|                       Ubuntu Linux VM                       |
+|       (Wazuh Manager + OpenSearch Indexer + Dashboard)      |
++-------------------------------------------------------------+
 
 ## Port Forwarding & Communication Table
 
