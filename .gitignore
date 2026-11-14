@@ -1,0 +1,6 @@
+client.keys
+*.pem
+*.key
+ossec.conf
+secret*
+.DS_Store

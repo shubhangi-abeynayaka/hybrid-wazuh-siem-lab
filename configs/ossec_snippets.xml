@@ -1,0 +1,13 @@
+<!-- Active Response configuration (Ubuntu Wazuh Manager ossec.conf) -->
+<active-response>
+  <disabled>no</disabled>
+  <command>firewall-drop</command>
+  <location>local</location>
+  <rules_id>100101</rules_id>
+  <timeout>60</timeout>
+</active-response>
+
+<!-- Windows Agent FIM configuration (Windows Host ossec.conf) -->
+<syscheck>
+  <directories realtime="yes">C:\Users\subha\Documents\Test</directories>
+</syscheck>
