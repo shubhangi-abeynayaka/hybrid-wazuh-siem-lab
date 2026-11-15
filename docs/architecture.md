@@ -7,7 +7,7 @@ This hybrid Wazuh SOC lab integrates a virtualized Linux management plane with a
 
 ## Topology Diagram
 
-![Hybrid Wazuh Lab Architecture](../screenshots/topology.jpg)
+![Hybrid Wazuh Lab Architecture](https://raw.githubusercontent.com/shubhangi-abeynayaka/hybrid-wazuh-siem-lab/main/screenshots/topology.png)
 
 *Figure: End-to-end traffic flow, port-forwarding tunnels, and network translation between the Windows 11 host and the Ubuntu Wazuh manager over VirtualBox NAT mode.*
 
